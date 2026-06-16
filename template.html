@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Шаурма №1</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f3f3f3;
+}
+
+header {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.menu-item {
+    background: white;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.price {
+    color: #ff5722;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}h2 {
+    color: #ff5722;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🌯 Шаурма №1 🌯</h1>
+    <p>Самая вкусная шаурма в городе!</p>
+</header>
+<section>
+    <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=1200"
+         width="100%"
+         style="border-radius:20px;">
+</section>
+<section>
+    <h2>Наше меню</h2>
+
+    <div class="menu-item">
+        <h3>Классическая шаурма</h3>
+        <p>Курица, овощи, соус.</p>
+        <div class="price">0 ₽</div>
+    </div>
+
+    <div class="menu-item">
+        <h3>Большая шаурма</h3>
+        <p>Больше мяса и овощей.</p>
+        <div class="price">0 ₽</div>
+    </div>
+
+    <div class="menu-item">
+        <h3>Острая шаурма</h3>
+        <p>Для любителей острого.</p>
+        <div class="price">0 ₽</div>
+</div>
+<section>
+    <h2>🎁 Акция</h2>
+    <p>Каждая 5-я шаурма со скидкой 50%!</p>
+</section>
+    </div>
+</section>
+<section>
+<section>
+    <h2>⏰ Режим работы</h2>
+    <p>Пн–Вс: 09:00–23:00</p>
+</section>
+<h2>📍 Где мы находимся</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=Moscow&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="300"
+style="border:0;border-radius:15px;"
+loading="lazy">
+</iframe>
+
+</section>
+<section>
+    <h2>Контакты</h2>
+    <p>📍 ул. Вкусная, 1</p>
+    <p>📞 +7 (900) 123-45-67</p>
+<section>
+<h2>Отзывы</h2>
+
+<div class="menu-item">
+⭐⭐⭐⭐⭐ Очень вкусно!
+</div>
+
+<div class="menu-item">
+⭐⭐⭐⭐⭐ Лучшая шаурма в городе!
+</div>
+
+</section>
+    <a href="tel:+7900000000">
+        <button>📞 Заказать</button>
+    </a>
+</section>
+<section>
+    <h2>💬 Чат с нами</h2>
+
+    <input type="text" id="msg" placeholder="Введите сообщение..."
+           style="width:70%;padding:10px;">
+
+    <button onclick="sendMessage()">Отправить</button>
+
+    <div id="chat"
+         style="margin-top:15px;background:white;padding:10px;border-radius:10px;">
+    </div>
+</section>
+
+<script>
+function sendMessage() {
+    let msg = document.getElementById("msg").value;
+
+    if(msg.trim() === "") return;
+
+    let chat = document.getElementById("chat");
+
+    chat.innerHTML += "<p><b>Вы:</b> " + msg + "</p>";
+    chat.innerHTML += "<p><b>Поддержка:</b> Спасибо за сообщение! Мы скоро ответим.</p>";
+
+    document.getElementById("msg").value = "";
+}
+</script>
+<footer style="background:#222;color:white;text-align:center;padding:20px;">
+    © 2026 Шаурма №1
+</footer>
+<section>
+</script>
+</body>
+</html>
